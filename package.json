@@ -1,0 +1,31 @@
+{
+  "name": "random_quote_machine",
+  "version": "1.0.0",
+  "description": "\"A random quote machine front end\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manonja/Random_Quote_Machine.git"
+  },
+  "author": "Manon Jacquin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manonja/Random_Quote_Machine/issues"
+  },
+  "homepage": "https://github.com/manonja/Random_Quote_Machine#readme",
+  "devDependencies": {
+    "ava": "^0.23.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.11.0",
+    "nyc": "^11.3.0",
+    "surge": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^16.1.0"
+  }
+}
