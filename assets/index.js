@@ -75,11 +75,23 @@ var Img = [
   }
 ]
 
-// create a function newQuote to generate a random quote from the array var quotes.
+// creates a function newQuote to generate a random quote from the array var quotes.
 function newQuoteGenerated(){
-  var randomQuote = quotes[Math.floor((Math.random() * (quotes.length)))];
-  document.getElementById("newQuoteDisplayed").innerHTML = "<div>" + randomQuote.text + "</div" + "\n" + "<div>" + randomQuote.author + "</div>";
-  document.getElementById("twitterUrl").href = "https://twitter.com/intent/tweet?text=" + randomQuote.text;
-  var randomImg = Img[Math.floor((Math.random() * (Img.length)))];
-  document.body.style.backgroundImage = randomImg.backgroundImage;
-}
+    getRandomQuote();
+    getTwitterUrl();
+    getRandomImg();
+};
+
+function getRandomQuote(){
+    var randomQuote = quotes[Math.floor((Math.random() * (quotes.length)))];
+    document.getElementById("newQuoteDisplayed").innerHTML = "<div>" + randomQuote.text + "</div" + "\n" + "<div>" + randomQuote.author + "</div>";
+};
+
+function getTwitterUrl(){
+    document.getElementById("twitterUrl").href = "https://twitter.com/intent/tweet?text=" + randomQuote.text;
+};
+
+function getRandomImg(){
+    var randomImg = Img[Math.floor((Math.random() * (Img.length)))];
+    document.body.style.backgroundImage = randomImg.backgroundImage;
+};
