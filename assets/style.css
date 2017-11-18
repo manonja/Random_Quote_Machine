@@ -1,0 +1,51 @@
+body {
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+  background-image: url("backgroundBK.jpg");
+}
+
+html {
+	height: 100%;
+	margin: 0;
+}
+
+.header {
+  	text-align: center;
+  	font-family: 'Lato', sans-serif;
+  	font-weight: 700;
+  	padding-top: 5%;
+}
+
+#newQuoteDisplayed {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 200px;
+  text-align: center;
+  color: #1a2b47;
+  transition: 0.5s;
+}
+
+#clickForQuote {
+    color: #f4f8ff;
+    background-color: #1a2b47 ;
+    border: none;
+    font-size: 30px;
+    border-radius: 8px;
+    text-align: center;
+    outline: none;
+    opacity: 0.9;
+    transition: 0.5s;
+}
+
+#clickForQuote:hover {
+  background-color: white;
+  color: black;
+  border: thin solid gray;
+  opacity: 0.5;
+}
+
+#twitterUrl {
+  font-size: 1.2em;
+  padding-top: 10px;
+}
