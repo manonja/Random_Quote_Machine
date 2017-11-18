@@ -1,6 +1,8 @@
 import test from 'ava';
-test('foo', t => {
-	t.pass();
+import Random_Quote_Machine from "../../index";
+
+test('quote', t => {
+	t.is(newQuoteGenerated);
 });
 test('bar', async t => {
 	const bar = Promise.resolve('bar');
